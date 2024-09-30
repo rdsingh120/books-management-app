@@ -45,7 +45,7 @@ const AddBookPage = () => {
     try {
       setLoading(true)
       const { data } = await axios.post(
-        'http://localhost:3000/api/books',
+        '/api/books',
         input
       )
       if (data?.success) {

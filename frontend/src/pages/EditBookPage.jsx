@@ -26,7 +26,7 @@ const EditBookPage = () => {
   const getBook = async () => {
     try {
       setLoading(true)
-      const { data } = await axios.get(`http://localhost:3000/api/books/${id}`)
+      const { data } = await axios.get(`/api/books/${id}`)
       setInput(data?.data?.[0])
       setLoading(false)
     } catch (error) {
@@ -40,7 +40,7 @@ const EditBookPage = () => {
     try {
       setLoading(true)
       const { data } = await axios.put(
-        `http://localhost:3000/api/books/${id}`,
+        `/api/books/${id}`,
         input
       )
 

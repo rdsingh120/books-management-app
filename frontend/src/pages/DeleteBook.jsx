@@ -14,7 +14,7 @@ const DeleteBook = () => {
   const getBookName = async () => {
     try {
       setLoading(true)
-      const { data } = await axios.get(`http://localhost:3000/api/books/${id}`)
+      const { data } = await axios.get(`/api/books/${id}`)
       setBookName(data?.data?.[0]?.title)
       setLoading(false)
     } catch (error) {
@@ -26,7 +26,7 @@ const DeleteBook = () => {
     try {
       setLoading(true)
       const { data } = await axios.put(
-        `http://localhost:3000/api/books/${id}`,
+        `/api/books/${id}`,
         { isDeleted: true }
       )
       setLoading(false)

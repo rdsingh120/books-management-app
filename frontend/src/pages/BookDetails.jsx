@@ -13,7 +13,7 @@ const BookDetails = () => {
   const getBook = async () => {
     try {
       setLoading(true)
-      const { data } = await axios.get(`http://localhost:3000/api/books/${id}`)
+      const { data } = await axios.get(`/api/books/${id}`)
       setBook(data?.data?.[0])
       setLoading(false)
     } catch (error) {

@@ -16,7 +16,7 @@ const Home = () => {
   const getBooks = async () => {
     try {
       setLoading(true)
-      const { data } = await axios.get('http://localhost:3000/api/books')
+      const { data } = await axios.get('/api/books')
       setBooks(data?.data)
       setLoading(false)
     } catch (error) {

@@ -3,14 +3,12 @@ import path from 'path'
 import 'dotenv/config'
 import connectDB from './database/connectDB.js'
 import router from './routes/book.routes.js'
-import cors from 'cors'
 
 const app = express()
 const port = process.env.PORT
 const __dirname = path.resolve()
 console.log('Hello ' + (process.env.NODE_ENV))
 
-app.use(cors())
 app.use(express.json())
 app.use('/api/books', router)
 
