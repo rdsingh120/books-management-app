@@ -7,9 +7,9 @@ The Books Management App is a simple CRUD (Create, Read, Update, Delete) applica
 
 ## Tech Stack
 
-**Client:** React, TailwindCSS
+**Frontend:** React, TailwindCSS
 
-**Server:** Node, Express
+**Backend:** Node, Express
 
 **Database:** MongoDB
 
