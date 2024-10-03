@@ -33,13 +33,11 @@ const BookDetails = () => {
         <div className="w-[300px] object-cover rounded-r-3xl shadow-2xl  cursor-pointer hover:scale-105 transition duration-400 overflow-hidden">
           <img src={book.cover} alt={book.title} className="w-full" />
         </div>
-        <div className="flex flex-col gap-5 max-w-[450px]">
+        <div className="flex flex-col gap-5 max-w-[500px]">
           <span className="text-xl italic text-[#b3a49d]">#{book._id}</span>
           <Tooltip label={book?.title} aria-label="A tooltip">
             <h1 className="text-5xl font-serif text-black">
-              {book?.title?.length > 19
-                ? book?.title?.substring(0, 17) + '...'
-                : book?.title}
+              {book?.title}
             </h1>
           </Tooltip>
           <h3 className="text-3xl font-serif text-black">
