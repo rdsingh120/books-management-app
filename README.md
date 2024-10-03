@@ -17,6 +17,9 @@ The Books Management App is a simple CRUD (Create, Read, Update, Delete) applica
 ## Demo
 
 https://booksapp-5090.onrender.com/
+
+*Note: It can take 1 to 2 minutes to load the app. Thank you for your patience!*
+
 ## Run Locally
 
 Clone the project
